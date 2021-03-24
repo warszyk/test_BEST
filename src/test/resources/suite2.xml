@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite2">
+
+    <parameter name="baseUrl" value="https://a.qa.sigma/sigma-operationsweb/"/>
+    <parameter name="loginResource" value="noAuth/login"/>
+    <parameter name="strategyProcessResource" value="auth/manualTask/strategyProcess/108"/>
+
+    <parameter name="login" value="test"/>
+    <parameter name="password" value="test"/>
+
+
+    <test name="TC_1_2">
+        <classes>
+            <class name="uiTC.TC_1_2_Test"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1">
+
+    <parameter name="baseUri" value="http://a-backend.qa.sigma"/>
+    <parameter name="basePath" value="strategy-processservice/rest"/>
+
+    <parameter name="dbo_user" value="someMagicLogin"/>
+    <parameter name="dbo_password" value="someMagicPassword"/>
+
+    <test name="TC_1_1">
+        <parameter name="sessionId" value="test-session"/>
+        <parameter name="requestId" value="test-request"/>
+        <parameter name="userId" value="test-user"/>
+        <parameter name="clientsId" value="1,2,3,4,5"/>
+        <parameter name="actionDefinitionId" value="1000"/>
+        <parameter name="segmentationId" value="10000"/>
+
+
+        <classes>
+            <class name="apiTC.TC_1_1_Test"/>
+        </classes>
+    </test>
+</suite>
